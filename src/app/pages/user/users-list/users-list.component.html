@@ -7,10 +7,10 @@
   </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let user of users">
-      <td>{{user.name}}</td>
-      <td>{{user.age}}</td>
-      <td>{{user.city}}</td>
-    </tr>
+  <tr *ngFor="let user of users">
+    <td><a [routerLink]="[user.name]">{{user.name}}</a></td>
+    <td>{{user.age}}</td>
+    <td>{{user.city}}</td>
+  </tr>
   </tbody>
 </table>
